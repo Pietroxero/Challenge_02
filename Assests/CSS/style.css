@@ -1,140 +1,71 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 body {
-    background-color: #d9dcd6;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
 }
 
-/*changed '.classes' in css code from to elements matching that of the html code structure classes changed - .header, .header h1, . header nav, .header nav ul, .header ul li*/
 header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
 }
 
 
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+h1 {
+    font-size: 200%;
 }
 
-header nav ul {
-    list-style-type: none;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-a {
-    color: #ffffff;
+nav a {
+    color: #b9C6ae;
+    font-weight: bold;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
+main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 1200px;
+    margin: 2% auto;
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+section {
+    flex: 1 1 0;
+    padding-right: 5%;
 }
 
-
-.float-right {
-    float: right;
-    margin-left: 25px;
+article {
+    border-bottom: 1px solid #d8a47f;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+article p {
+    margin: 2% 0;
+    font-size: 110%;
 }
-
-/*Consolidated these 3 classes to one class = '.content article'  class was defined as 'content' within the html, article  is the element being used in these statements that were doing the same functions creating unnecessary redundancy*/
-.content article {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-
-/*Consolidated these 3 classes to one class = '.content img' class was defined as 'content' within the html, img is the tag being used in these statements that were doing the same functions creating unnecessary redundancy*/
-.content img {
-    max-height: 200px;
-}
-
-
-/*Consolidated these 3 classes to one class = '.content h2' class was defined as 'content' within the html, h2 is the tag these 3 were essentially doing the same exact function creating unnecessary redundancy.*/
-.content h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-/*Consolidated these 3 classes '.benefit-leads,brand,cost' to one class '.benefits section' to match the html element 'section'*/
-.benefits section {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-
-
-/*Consolidated these 3 classes '.benefit-leads,brand,cost' to one class '.benefits' and combined tag from html 'h3' with the class '.benefits h3' to have one function not 3*/
-.benefits h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-
-/*Consolidated these 3 classes '.benefit-leads,brand,cost' to one class '.benefits' and combined tag from html 'img' with the class '.benefits img' to have one function not 3*/
-.benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
 
 footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #13293d;
+    color: #fff;
 }
 
-footer h2 {
-    font-size: 20px;
-}
+@media screen and (max-width: 768px) {
+
+    header,
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        padding-right: 0;
+    }

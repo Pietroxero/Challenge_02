@@ -1,0 +1,22 @@
+.section{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.subheader{
+    font-size: 50px;
+    color: green;
+    border-right: 25px black solid;
+    width: 200px;
+}
+
+.abouts{
+    font-size: 25px;
+    color:red;
+    /* border-left: 25px black solid; */
+}
+
+ .works{ 
+    font-size: 25px;
+    color:red;
+} 

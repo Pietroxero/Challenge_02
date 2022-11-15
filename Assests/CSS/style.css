@@ -5,19 +5,14 @@
 }
 
 header {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     padding: 1%;
     width: 100%;
     background-color: #13293d;
     color: #fff;
 }
 
-h1 {
-    font-size: 200%;
-    display: inline-block;
-}
 
 nav ul {
     float: right;
@@ -27,7 +22,7 @@ nav ul {
 
 nav a {
     font-size: 20px;
-    display: inline-block;
+    display: inline;
     color: #b9C6ae;
     font-weight: bold;
     margin-left: 20px;
@@ -43,29 +38,43 @@ nav a {
     background-position: center;
 }
 
-section {
-    border-right: 4px solid black;
-    width: 100%;
-    margin: 30px auto;
-    /* flex: 1 1 0;
-    padding-right: 5%; */
+
+.section {
+    display: flex;
+    margin-bottom: 10px;
 }
 
-h2 {
-    display: flex;
-    justify-content: flex-end;
-    width: 20%;
+ .subheader{
+    font-size: 25px;
     color: black;
-    font-size: 36px;
-    float: left;
-    padding-right: 10px;
+    /* border-right: 15px black solid; */
+    width: 200px;
+} 
+
+
+ /* p {
+    margin: 30px 0;
+    font-size: 110%;
+    display: flex; 
+    font-size: 20px;
+    color: black;
+    padding-left: 20px;
+    border-left: 4px solid black;
+    margin-bottom: 20px;
+    margin-left: 20%;
+} */
+
+
+.abouts {
+    /* margin-bottom: 20px; */
+    /* padding: 50px; */
+    border-left: 15px solid black;
+    /* height: 50px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
 }
 
-
-article p {
-    /* margin: 30px 0;
-    font-size: 110%; */
-    display: flex;
+/* .abouts{
     width: 70%;
     font-size: 20px;
     color: black;
@@ -73,33 +82,45 @@ article p {
     border-left: 4px solid black;
     margin-bottom: 20px;
     margin-left: 20%;
-}
+} */
 
-
-.about {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 250px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: crimson;
-    color: black;
-}
 
 .work {
     margin-bottom: 20px;
     padding: 50px;
     height: 250px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: crimson;
-    color: black;
+    display: flex;
 }
 
+.works {
+    margin-bottom: 20px;
+    border-left: 15px solid black;
+    color: white;
+}
+
+ .github{
+    background-image: URL("../Images/Acidburn.png");
+    width: 600px;
+    height: 300px;
+    background-position: center;
+} 
+
 .contact {
+    display: flex;
     margin-bottom: 20px;
     padding: 50px;
     height: 250px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: crimson;
+    color: black;
+}
+
+.contacts {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
 }
 
@@ -108,9 +129,8 @@ article p {
     padding: 50px;
     height: 250px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: crimson;
     color: black;
-}
+} */
 
 
 

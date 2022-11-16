@@ -4,13 +4,23 @@
     margin: 0;
 }
 
-header {
+.container {
     display: flex;
     justify-content: space-between;
     padding: 1%;
     width: 100%;
     background-color: #13293d;
     color: #fff;
+    position:absolute;
+}
+
+.text_box{
+    bottom: 20px;
+    right: 20px;
+    background-color: teal;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -18,37 +28,40 @@ nav ul {
     float: right;
     margin-right: 20px;
     padding-top: 15px;
+    list-style: none;
 }
 
 nav a {
     font-size: 20px;
     display: inline;
-    color: #b9C6ae;
-    font-weight: bold;
+    color: teal;
+    font-weight: thick;
     margin-left: 20px;
     text-decoration: underline;
 }
 
-.hokage {
+.Hokage {
     height: 600px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../Images/Hokage.png");
+    background-image: url("../Images/Acidburn.png");
     background-size: cover;
     background-position: center;
 }
 
-
-.section {
+/* .section {
     display: flex;
     margin-bottom: 10px;
-}
+} */
 
  .subheader{
     font-size: 25px;
     color: black;
+    margin: 0px 20px;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* border-right: 15px black solid; */
-    width: 200px;
+    /* width: 200px; */
 } 
 
 
@@ -66,26 +79,15 @@ nav a {
 
 
 .abouts {
-    /* margin-bottom: 20px; */
-    /* padding: 50px; */
+    margin: 0px 150px;
     border-left: 15px solid black;
-    /* height: 50px; */
+    padding: 20px;
+    margin-bottom: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
 }
 
-/* .abouts{
-    width: 70%;
-    font-size: 20px;
-    color: black;
-    padding-left: 20px;
-    border-left: 4px solid black;
-    margin-bottom: 20px;
-    margin-left: 20%;
-} */
-
-
-.work {
+#work {
     margin-bottom: 20px;
     padding: 50px;
     height: 250px;
@@ -96,15 +98,41 @@ nav a {
 .works {
     margin-bottom: 20px;
     border-left: 15px solid black;
-    color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
 }
 
- .github{
-    background-image: URL("../Images/Acidburn.png");
-    width: 600px;
-    height: 300px;
-    background-position: center;
-} 
+.wraparound{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.workimg {
+    width: 50%;
+    height: auto;
+    border: 10px solid yellow;
+    margin: 10px;
+}
+
+.main_img {
+position: relative;
+width: 400px;
+height: 400px;
+}
+
+.main_img .workimg {
+    width: 100%;
+}
+
+.text_1 {
+position: absolute;
+background-color: white;
+bottom: 100px;
+margin: 10px;
+}
+
 
 .contact {
     display: flex;

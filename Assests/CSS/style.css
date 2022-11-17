@@ -12,10 +12,10 @@
     width: 100%;
     background-color: #13293d;
     color: #fff;
-    position:absolute;
+    position: absolute;
 }
 
-.text_box{
+.text_box {
     bottom: 20px;
     right: 20px;
     background-color: teal;
@@ -32,7 +32,7 @@ nav ul {
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     float: right;
     margin-right: 20px;
     padding-top: 15px;
@@ -48,6 +48,10 @@ nav a {
     text-decoration: underline;
 }
 
+section {
+    width: 100%;
+}
+
 .Hokage {
     height: 300px;
     width: 100%;
@@ -57,13 +61,13 @@ nav a {
     background-position: center;
 }
 
- .section__title{ 
+.section__title {
     font-size: 25px;
     color: black;
     margin: 0px 20px;
     display: inline-block;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} 
+}
 
 .abouts {
     margin: 0px 150px;
@@ -74,32 +78,36 @@ nav a {
     color: black;
 }
 
- .container2 {
+.container2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    position: relative;
+    gap: 10px;
+    max-width: 100%;
+    margin: 0px 150px;
+    border-left: 15px solid black;
+    padding: 20px;
     /* Margin: 20px; */
-  }
+}
 
 .hover {
     position: relative;
     text-align: center;
-    Color: Red; 
-  }
+    Color: Red;
+}
 
 .image {
     /* opacity: 0.56; */
-    width: auto; 
+    width: auto;
     transition: .5s ease;
     backface-visibility: hidden;
 }
 
 .text {
     background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 .middle {
@@ -120,90 +128,45 @@ nav a {
     opacity: 1;
 }
 
-
-
-  /*.work__content {
-     display: flex;
-    background-color: blueviolet;
-    width: 500px;
-    justify-content: center;
-    padding: 10px 0 10px 0;
-    margin-left: 25px;
-    border: red dotted 5pt;
-    transition: 0.3s;
-  }
-
-  .work__title {
-    border-right: black solid 10pt;
-    padding: 0 25px 0 25px;
-  }
-
-  .work__github {
-    width: 450px;
-    background-color: aqua;
-    margin: 25px;
-  }
-
-  .work__github_title {
-    z-index: 2;
-    color: red;
-    font-weight: 200;
-  }
-  
-  .work__github_image-text {
-    margin: 10px 0 25px 0;
-    height: 300px;
+.project_card {
     position: relative;
-  }
-  
-  .bigbox__image-text {
-    left: 25px;
-    bottom: 25px;
-  }
-  
-  .work__examples {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-     justify-content: space-around; 
-    max-width: 1120px;
-  }
-  
-  .work__example {
-    width: 200px;
-    background-color: orange;
-    margin: 10px 25px 10px 25px;
-  }
-  
+    flex: 1;
+}
 
-  .work__image {
-    width: 100%;
-    z-index: 1;
+.project_card-image {
     opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  }
+    display: block;
+    min-width: 250px; 
+    min-height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
 
-.work__github_title {
-    background-color: #555;
+.project_card-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.project_card-text {
+    background-color: #4CAF50;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-    transition: .5s ease;
 }
 
-.work__content:hover .work__image {
+.project_card:hover .project_card-image {
     opacity: 0.3;
 }
 
-.work__image:hover .work__github_title {
-    opacity:1;
-    bottom: 100%;
-    align-items: center;
-} */
+.project_card:hover .project_card-middle {
+    opacity: 1;
+}
+
 
 .contact {
     display: flex;

@@ -35,6 +35,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The intent for the works section squares is to have these be links to bodies of work that will be built and I would want to display for future potential employment. Ideally linking to things such as my github repo, or projects that are complete.
 
+## Disclaimer
+While this page is not as pretty as the mock up, I was not overly concerned in regards to the look. Based on the acceptance criteria it was less about the actual style and more so about hitting the requirements and having the page function as intended per the mock up. Throughout this course I will be making incremental changes and this should be only considered 'V1' rather than a completed project. 
+
 
 ## Features
 

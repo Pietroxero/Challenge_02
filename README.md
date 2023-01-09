@@ -1,4 +1,4 @@
-# Challenge_02
+# Portfolio of Work - Redux
 
 # <CSS Challenge - Professional Portfolio!>
 
@@ -46,6 +46,10 @@ While this page is not as pretty as the mock up, I was not overly concerned in r
 ## Tests
 
 As part of the testing for this page, Multiple attempts were made to edit the CSS to have the functions for the 'Works' section. These test involved changing selectors little by little and using inspect dev tools on the webpage that was opened in a live server to see what these tweaks were changing and affecting. 
+
+## New Version 
+From the screenshots that are linked below in the README, you can see glimpses of how the portfolio look on its first run.
+Now with some more knowledge there will be screenshots of how the second iteration of this page will look. 
 
 ## Screenshots
 ![Screenshot of Website](./Assests/Images/Screenshot%20Large.png)
